@@ -1,0 +1,2 @@
+﻿@model TrainingManagement.Models.Category
+@Html.DropDownListFor(model => model.CateId, new SelectList(Model.CateCollection, "CateId", "CateName", "--Select--"))

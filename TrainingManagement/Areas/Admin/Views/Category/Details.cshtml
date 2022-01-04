@@ -1,0 +1,62 @@
+﻿@model TrainingManagement.Models.Category
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <h2>Details</h2>
+
+            <div>
+                <hr />
+                <dl class="dl-horizontal">
+                    <dt>
+                        @Html.DisplayNameFor(model => model.CateId)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.CateId)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.CateName)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.CateName)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.CreateDate)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.CreateDate)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.UpdateDate)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.UpdateDate)
+                    </dd>
+
+                </dl>
+            </div>
+            <p>
+                @Html.ActionLink("Edit", "Edit", new { id = Model.CateId }) |
+                @Html.ActionLink("Back to List", "Index")
+            </p>
+        </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+    <!-- Main content -->
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+</div>

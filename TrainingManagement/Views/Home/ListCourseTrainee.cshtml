@@ -1,0 +1,18 @@
+﻿@model TrainingManagement.Models.Trainee_Course
+
+@if (Model.TraineeCollection != null)
+{
+    foreach (var item in Model.TraineeCollection)
+    {
+        string obj = item.CourseId.ToString();
+        if (!string.IsNullOrEmpty(obj))
+        {
+            <a class="dropdown-item" href="#">@item.CourseId</a>
+        }
+    }
+}
+else
+{
+    <a class="dropdown-item" href="#">Empty</a>
+}
+

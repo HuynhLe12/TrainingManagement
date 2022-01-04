@@ -1,0 +1,82 @@
+﻿@model TrainingManagement.Models.Course
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <h2>Details</h2>
+
+            <div>
+
+                <hr />
+                <dl class="dl-horizontal">
+                    <dt>
+                        @Html.DisplayNameFor(model => model.CourseName)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.CourseName)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.TrainerId)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.TrainerId)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.CourseDesc)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.CourseDesc)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.CreateDate)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.CreateDate)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.UpdateDate)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.UpdateDate)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Category.CateName)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Category.CateName)
+                    </dd>
+
+                </dl>
+            </div>
+            <p>
+                @Html.ActionLink("Edit", "Edit", new { id = Model.CourseId }) |
+                @Html.ActionLink("Back to List", "Index")|
+                @Html.ActionLink("Add Student", "AddStudent", new { id = Model.CourseId })|
+                @Html.ActionLink("View Student", "ViewStudent", new { id = Model.CourseId })
+            </p>
+        </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+    <!-- Main content -->
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+</div>

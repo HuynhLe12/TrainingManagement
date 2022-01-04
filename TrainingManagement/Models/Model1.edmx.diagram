@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c873949e1fff422eacb70c99841a3a6f" Name="Diagram1">
+        <EntityTypeShape EntityType="TrainingManagementModel.Administrator" Width="1.5" PointX="3" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrainingManagementModel.Category" Width="1.5" PointX="3" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrainingManagementModel.Course" Width="1.5" PointX="5.25" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrainingManagementModel.Role" Width="1.5" PointX="0.75" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrainingManagementModel.StaffTrainer" Width="1.5" PointX="3" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrainingManagementModel.sysdiagram" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrainingManagementModel.Trainee" Width="1.5" PointX="3" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrainingManagementModel.Trainee_Course" Width="1.5" PointX="7.5" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrainingManagementModel.Trainer" Width="1.5" PointX="3" PointY="11" IsExpanded="true" />
+        <AssociationConnector Association="TrainingManagementModel.fk_roleid4" ManuallyRouted="false" />
+        <AssociationConnector Association="TrainingManagementModel.fk_cateid" ManuallyRouted="false" />
+        <AssociationConnector Association="TrainingManagementModel.fk_courseid2" ManuallyRouted="false" />
+        <AssociationConnector Association="TrainingManagementModel.fk_trainerid" ManuallyRouted="false" />
+        <AssociationConnector Association="TrainingManagementModel.fk_roleid1" ManuallyRouted="false" />
+        <AssociationConnector Association="TrainingManagementModel.fk_roleid2" ManuallyRouted="false" />
+        <AssociationConnector Association="TrainingManagementModel.fk_roleid3" ManuallyRouted="false" />
+        <AssociationConnector Association="TrainingManagementModel.fk_traineeid" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

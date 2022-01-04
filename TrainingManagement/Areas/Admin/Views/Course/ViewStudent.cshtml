@@ -1,0 +1,61 @@
+﻿@model IEnumerable<TrainingManagement.Models.Trainee_Course>
+
+@{
+    ViewBag.Title = "ViewStudent";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+
+ 
+            <table class="table">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.CreateDate)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Course.CourseId)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Trainee.TraineeId)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Trainee.Name)
+                    </th>
+                    <th></th>
+                </tr>
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.CreateDate)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Course.CourseId)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Trainee.TraineeId)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Trainee.Name)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Delete", "DeleteStudent", new {  id=item.TraineeId  })
+                        </td>
+                    </tr>
+                }
+
+            </table>
+        </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+    <!-- Main content -->
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+</div>

@@ -1,0 +1,2 @@
+﻿@model TrainingManagement.Models.Role
+@Html.DropDownListFor(model => model.RoleId, new SelectList(Model.RoleCollection, "RoleId", "RoleName","--Select--"))

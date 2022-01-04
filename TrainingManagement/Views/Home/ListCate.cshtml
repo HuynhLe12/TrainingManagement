@@ -1,0 +1,14 @@
+﻿@model TrainingManagement.Models.Category
+@foreach (var item in Model.CateCollection)
+{
+    if (!string.IsNullOrEmpty(item.CateName))
+    {
+        @Html.ActionLink(item.CateName, // <-- Link text
+                         "ProductCategory", // <-- Action Method Name
+                         "Category", // <-- Controller Name
+                         new { Id = item.CateId }, // <-- Route value
+                         htmlAttributes: new { @class = "dropdown-item" } // <-- htmlArguments
+                         )
+
+    }
+}
